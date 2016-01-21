@@ -32,10 +32,18 @@
         <% end %>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <% if user_signed_in? %>
+        <% #if user_signed_in? %>
+          <li><%= link_to "NFL", '#' %></li>
+          <li><%= link_to "NBA", '#' %></li>
+          <li><%= link_to "Soccer", '#' %></li>
+          <li><%= link_to "MLB", '#' %></li>
+          <li><%= link_to "Golf", '#' %></li>
+          <li><%= link_to "Other", '#' %></li>
+          <li><%= link_to "", '#' %></li>
+          <li><%= link_to "", '#' %></li>
           <li><%= link_to "Community", users_path %></li>
           <li><%= link_to "My Account", edit_user_registration_path %></li>
-        <% end %>
+        <%# end %>
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Contact Us", new_contact_path %></li>
       </ul>
